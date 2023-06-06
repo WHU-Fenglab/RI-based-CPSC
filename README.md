@@ -12,9 +12,9 @@ Clone the code from this page，or use pipy to installation.
     pip install RI_Corecctor
 
 ### Tutorial
-Firstly,The data collected by the instrument must be converted into mzML format, by ProteoWizard MSConvert or other tools. 
+First,The data collected by the LC-MS instrument must be converted into .mzML format, by ProteoWizard MSConvert or other tools. 
 
-#### Import mzML format data:
+#### Import .mzML format data:
 
     Data_1 = MZDataProcess('.../Data_1.mzML')
 
@@ -26,7 +26,7 @@ Calibrants data format ( without RT ) :
 | 4   | 146.0812  |
 | ... | ...       |
 
-Calibrants data format ( with RT (second)  ) :
+Calibrants data format ( with RT (unit: second)  ) :
 | C   | m/z       | RT |
 |-----|-----------|----|
 | 3   | 132.0655  |    |
