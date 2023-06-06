@@ -16,7 +16,7 @@ The user can install the RI-based-CPSC program by cloning the code from this pag
 ### Tutorial
 The raw data obtaineded from the LC-MS instrument must be converted into .mzML format, by ProteoWizard MSConvert or other tools. 
 
-#### Import the .mzML format raw data to the program:
+#### Import the .mzML format raw data:
 
     Data_1 = MZDataProcess('.../Data_1.mzML')
 
@@ -43,7 +43,7 @@ Create a correction process, add data to be corrected, select a reference file a
     Data_Align.RI_Correct(RefNumber=0)
 
 #### Result
-The corrected data will be saved in the original folder as a .mzML format file with the original data name + "_RI"
+The corrected data will be saved in the original folder as .mzML format with the original data name + "_RI"
     
 
 
