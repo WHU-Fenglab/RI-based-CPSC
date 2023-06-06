@@ -9,7 +9,7 @@ The software is based on Python version 3.9
 ### Installation
 Clone the code from this page，or use pipy to installation.
 
-    pip install RI_Corecctor
+    pip install Time_Corecctor
 
 ### Tutorial
 First,The data collected by the LC-MS instrument must be converted into .mzML format, by ProteoWizard MSConvert or other tools. 
