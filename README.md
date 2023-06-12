@@ -6,7 +6,7 @@
 The software is based on Python version 3.9
 
 ### Installation
-The user can install the RI-based-CPSC program by cloning the code from this page，or using pipy to install.
+Users can install the RI-based-CPSC program by cloning the code from this page or by using pipy for installation.
 
     pip install Time_Corecctor
 
