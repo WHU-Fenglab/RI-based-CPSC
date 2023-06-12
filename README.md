@@ -10,15 +10,15 @@ The user can install the RI-based-CPSC program by cloning the code from this pag
 
     pip install Time_Corecctor
 
-### Tutorial
-The raw data obtaineded from the LC-MS instrument must be converted into .mzML format, by ProteoWizard MSConvert or other tools. 
+### Chromatographic peak shift correction 
+For data integration, the raw data obtained from the LC-MS instrument must be converted into .mzML format by ProteoWizard msConvert or other tools. 
 
-#### Import the .mzML format raw data:
+#### Importation of the .mzML format data:
 
     Data_1 = MZDataProcess('.../Data_1.mzML')
 
-#### Import the .xlsx format data of N-acyl glycine calibrants:
-Before correction, import the .xlsx format file containing the m/z information of N-acyl glycine calibrants to the prrogram.
+#### Importation of the .xlsx format data of N-acyl glycine calibrants:
+For retention time correction, the m/z information of N-acyl glycine calibrants is needed, import the .xlsx format file containing the m/z information of N-acyl glycine calibrants to the program.
 
 Calibrants data format:
 | C   | m/z       |
@@ -31,7 +31,7 @@ Calibrants data format:
     Data_1.set_RIIS('...\calibrants data.xlsx')
 
 #### Chromatographic peak shift correction
-Create a correction process, add data to be corrected, select a reference file and then perform correction.
+For chromatographic peak shift correction, users can create a correction process through the following steps: add data to be corrected, select a reference file and then perform correction.
 
     Data_Align = DataAlignment()
     Data_Align.add_Data(Data_1)
@@ -40,7 +40,7 @@ Create a correction process, add data to be corrected, select a reference file a
     Data_Align.RI_Correct(RefNumber=0)
 
 #### Result
-The corrected data will be saved in the original folder as .mzML format with the original data name + "_RI"
+The corrected data will be saved in the original folder as .mzML format with the original data name followed by "_RI"
     
 
 
