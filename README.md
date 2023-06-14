@@ -13,6 +13,10 @@ Users can install the RI-based-CPSC program by cloning the code from this page o
 ### Chromatographic peak shift correction 
 For data integration, the raw data obtained from the LC-MS instrument must be converted into .mzML format by ProteoWizard msConvert or other tools. 
 
+#### Importation of the package:
+
+    from Time_Corecctor import MZDataProcess,DataAlignment
+
 #### Importation of the .mzML format data:
 
     Data_1 = MZDataProcess('.../Data_1.mzML')
